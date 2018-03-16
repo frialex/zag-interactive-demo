@@ -1,7 +1,7 @@
 .carousel-item {
     display: none;
     margin: 20px;
-    border: 1px solid lightgray;
+    // border: 1px solid lightgray;
     font-family: 'Lato', sans-serif;
 
     .circleImage{
@@ -42,6 +42,16 @@
 h1 { 
     font-family: 'Amatic SC', cursive;
     text-align: center;
+}
+
+//iPhone
+@media (min-width: 370px) and (max-width: 766px){
+    .arrow { width: 50px;}
+
+    .carousel-item {
+        .circleImage img { width: 100px;}
+        .userDetails{ width: 200px;}
+    }
 }
 
 //ipad
