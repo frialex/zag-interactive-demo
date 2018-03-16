@@ -1,5 +1,4 @@
-﻿
-$("#left").click(function(){
+﻿function swipeLeft(){
     // debugger;
     var $cur = $(".carousel-item.active");
     var $previous = $cur.prev();
@@ -13,11 +12,9 @@ $("#left").click(function(){
         $previous.addClass("active");
     }
     $cur.removeClass("active");
-})
+}
 
-//this could be simplified to a single function that takes selectors..
-//leaving it as is because its a demo
-$("#right").click(function(){
+function swipeRight(){
 
     var $cur  = $(".carousel-item.active");
     var $next = $cur.next();  
@@ -33,4 +30,12 @@ $("#right").click(function(){
 
     $cur.removeClass("active");
     
+}
+
+
+$("#carousel").swipe({
+    swipeLeft: swipeLeft,
+    swipeRight: swipeRight
 })
+$("#left").click(swipeLeft);
+$("#right").click(swipeRight);
