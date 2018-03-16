@@ -16,3 +16,7 @@
   display: inline-block;
   cursor: pointer;
 }
+.arrow img {
+  width: 100px;
+  height: 100px;
+}
