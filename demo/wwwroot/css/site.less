@@ -1,9 +1,17 @@
 .carousel-item {
-    display: inline-block;
+    display: none;
     margin: 20px;
     border: 1px solid black;
+
+    &.active {
+        display: inline-block;
+
+        + .carousel-item {
+            display: inline-block;
+        }
+    }
+
 }
 
 #carousel { display: inline-block; }
-#leftArrow { display: inline-block; }
-#rightArrow { display: inline-block; }
+.arrow { display: inline-block; cursor: pointer; }

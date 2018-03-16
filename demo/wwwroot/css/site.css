@@ -1,14 +1,18 @@
 .carousel-item {
-  display: inline-block;
+  display: none;
   margin: 20px;
   border: 1px solid black;
+}
+.carousel-item.active {
+  display: inline-block;
+}
+.carousel-item.active + .carousel-item {
+  display: inline-block;
 }
 #carousel {
   display: inline-block;
 }
-#leftArrow {
+.arrow {
   display: inline-block;
-}
-#rightArrow {
-  display: inline-block;
+  cursor: pointer;
 }
