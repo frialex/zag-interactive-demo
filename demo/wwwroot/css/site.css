@@ -6,8 +6,10 @@
 .carousel-item.active {
   display: inline-block;
 }
-.carousel-item.active + .carousel-item {
-  display: inline-block;
+@media (min-width: 600px) {
+  .carousel-item.active + .carousel-item {
+    display: inline-block;
+  }
 }
 #carousel {
   display: inline-block;

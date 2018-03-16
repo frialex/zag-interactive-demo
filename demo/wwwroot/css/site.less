@@ -6,18 +6,19 @@
     &.active {
         display: inline-block;
 
-        + .carousel-item {
-            display: inline-block;
+        @media (min-width: 600px){
+            + .carousel-item {
+                display: inline-block;
+            }
         }
     }
-
 }
 
 #carousel { display: inline-block; }
 .arrow { 
     display: inline-block; 
     cursor: pointer; 
-    
+
     img {
         width: 100px; height: 100px
     }
