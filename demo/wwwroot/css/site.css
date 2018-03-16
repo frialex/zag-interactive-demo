@@ -7,11 +7,13 @@
   position: relative;
 }
 .carousel-item .circleImage img {
-  max-width: 50px;
-  min-width: 50px;
+  width: 50px;
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 .carousel-item .userDetails {
   width: 100px;
@@ -19,7 +21,7 @@
 .carousel-item.active {
   display: inline-block;
 }
-@media (min-width: 600px) {
+@media (min-width: 1024px) {
   .carousel-item.active + .carousel-item {
     display: inline-block;
   }
