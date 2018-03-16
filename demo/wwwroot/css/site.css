@@ -1,7 +1,20 @@
 .carousel-item {
   display: none;
   margin: 20px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
+}
+.carousel-item .circleImage {
+  position: relative;
+}
+.carousel-item .circleImage img {
+  max-width: 50px;
+  min-width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.carousel-item .userDetails {
+  width: 100px;
 }
 .carousel-item.active {
   display: inline-block;
