@@ -1,24 +1,23 @@
-﻿// Write your JavaScript code.
-
+﻿
 $("#left").click(function(){
     
 })
 
 $("#right").click(function(){
-    //debugger;
-
-    //find .carousel-item.active  next sibling
-    //remove .active from current and add it to sibling
 
     var $cur  = $(".carousel-item.active");
-    var $next = $cur.next();
-    //var $next = $(".carousel-item.active .carousel-item")
+    var $next = $cur.next();  
 
-    //TODO: Need to add logic to check if next is null, if so
-    //find the find .carousel-item of the current active one.   
+    if($next.length == 0){
+        // debugger;
+        //There are no more items, restart to first.
+        var $parent = $cur.parent();
+        var $first = $parent.find(".carousel-item:first-child");
+        $first.addClass("active");
+    } else {
+        $next.addClass("active");
+    }
 
     $cur.removeClass("active");
-    $next.addClass("active");
-
     
 })
