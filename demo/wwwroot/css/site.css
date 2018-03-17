@@ -48,6 +48,9 @@ h1 {
     height: 300px;
     vertical-align: top;
   }
+  .carousel-item .circleImage svg {
+    width: 200px;
+  }
   .carousel-item .circleImage img {
     width: 100px;
   }
