@@ -1,7 +1,7 @@
 ﻿function swipeLeft(){
     // debugger;
     var $cur = $(".carousel-item.active");
-    var $previous = $cur.prev();
+    var $previous = $cur.prev(".carousel-item");
     
     if($previous.length == 0){
         //set last as active
@@ -22,7 +22,8 @@ function swipeRight(){
     if($next.length == 0){
         //There are no more items, restart to first.
         var $parent = $cur.parent();
-        var $first = $parent.find(".carousel-item:first-child");
+        var $first = $parent.find(".carousel-item").first();
+
         $first.addClass("active");
     } else {
         $next.addClass("active");
