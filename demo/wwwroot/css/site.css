@@ -39,6 +39,9 @@ h1 {
   font-family: 'Amatic SC', cursive;
   text-align: center;
 }
+.why {
+  display: none;
+}
 @media (min-width: 370px) and (max-width: 766px) {
   .arrow {
     width: 50px;
@@ -87,5 +90,10 @@ h1 {
   .carousel-item .userDetails {
     width: 200px;
     vertical-align: top;
+    padding-left: 10px;
+  }
+  .why {
+    display: block;
+    text-align: center;
   }
 }
